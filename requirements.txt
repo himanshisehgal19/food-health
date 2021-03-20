@@ -9,5 +9,8 @@ matplotlib==3.3.4
 numpy==1.19.4
 pandas==1.1.5
 scikit-learn==0.24.1
+google==3.0.0
+google-search==1.0.2
+gsearch==1.6.0
 requests==2.25.0
 Werkzeug==1.0.1
