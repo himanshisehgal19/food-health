@@ -14,3 +14,4 @@ google-search==1.0.2
 gsearch==1.6.0
 requests==2.25.0
 Werkzeug==1.0.1
+googlesearch-python
