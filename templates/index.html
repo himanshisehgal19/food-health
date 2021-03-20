@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Protein in my food</title>
+    <style>
+        .img{
+            background-color: antiquewhite;
+        }
+        input[type=submit]{
+    width: 20%;
+    background-color: #ddd;
+    
+    padding: 10px 10px;
+    margin: 3rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-right: 10rem;
+	color: lavenderblush;
+	background-color: dodgerblue;
+	font-size: 1.8rem;
+    margin-left: 10rem;
+}
+input[type=text], input[type=number] {
+    margin-top: 4rem;
+    width: 50%;
+    padding: 18px 18px;
+    
+    display: inline-block;
+    border: 1px solid #ccc;
+	border-radius: 4px;
+    
+    
+}
+select{
+background-color: whitesmoke;
+  border: none;
+  color:dodgerblue;
+  padding: 15px 230px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+
+}
+h1{
+    font-size: 2rem;
+	background-color: antiquewhite;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 2.5rem;
+	color:indianred;
+}
+h2{
+    font-size: 4rem;
+	color:dodgerblue
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    color:dodgerblue;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <center><h2> Food Health </h2>
+        <br></center></div>
+    <div class="img">
+    <center>
+        
+
+    <img src={{imageis}} height="400px" width="400px">
+    </center>
+</div>
+<center>    <form method="POST" action="/">
+    <input type ="text" name ="food" placeholder=" Enter Food Name" >
+    <br>
+    <br>
+
+    <center>
+        <p>Is this food Home-made also?</p><br>
+        <select name= "yes" method="GET" action="/">
+          
+          <option value= "yes" SELECTED>Yes</option>
+          <option value= "no" SELECTED>No</option>
+          
+          <option SELECTED>Select </option>
+        </select>
+      </center>
+    
+  	<input type="submit" ></center>
+      
+</form>
+    <!--<center><img src={{imageis}} ></center>
+    <p> Image is.....</p>-->
+    <h1><i>{{content}}</i>
+        <br>
+        <marquee  direction = "left"><i>Protein :  {{protein}}</i></marquee></h1>
+        {% if prd == 'yes' %}
+        <p>Click below for Recipe of {{food}} </p>
+        <br>
+        <center>
+        <a href={{link}}><img src="https://image.shutterstock.com/image-vector/food-sign-text-recipe-vector-600w-1053182165.jpg" alt="HTML tutorial" style="width:300px;height:300px;"></a>
+        {% endif %}
+    </center>
+    </body>
+</html>
